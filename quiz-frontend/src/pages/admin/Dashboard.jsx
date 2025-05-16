@@ -62,7 +62,7 @@ const AdminDashboard = () => {
             {quizzes.map((quiz) => (
               <li key={quiz._id} className="px-6 py-4 flex items-center justify-between">
                 <span className="text-lg font-medium">{quiz.title}</span>
-                <div className="flex space-x-2">
+                <div className="flex space-x-2 hidden">
                   <Link
                     to={`/admin/quiz/${quiz._id}`}
                     className="text-indigo-600 hover:text-indigo-900"
